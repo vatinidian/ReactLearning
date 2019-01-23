@@ -1,0 +1,43 @@
+{
+    "name": "listpage",
+    "version": "1.0.0",
+    "description": "Develop a Table with SearchBar",
+    "main": "index.js",
+    "scripts": {
+        "test": "test",
+        "build": "webpack --mode development",
+        "start": "webpack-dev-server --open --mode development"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vatinidian/ReactLearning.git"
+    },
+    "keywords": [
+        "ReactLearning",
+        "ListPage"
+    ],
+    "author": "Venkatesh Manohar",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/vatinidian/ReactLearning/issues"
+    },
+    "homepage": "https://github.com/vatinidian/ReactLearning#readme",
+    "dependencies": {
+        "git": "^0.1.5",
+        "npm-git-install": "^0.3.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.1.0",
+        "@babel/core": "^7.2.2",
+        "@babel/preset-env": "^7.3.1",
+        "@babel/preset-react": "^7.0.0",
+        "babel": "^6.23.0",
+        "babel-loader": "^8.0.5",
+        "css-loader": "^2.1.0",
+        "react": "^16.7.0",
+        "react-dom": "^16.7.0",
+        "webpack": "^4.29.0",
+        "webpack-cli": "^3.2.1",
+        "webpack-dev-server": "^3.1.14"
+    }
+}
