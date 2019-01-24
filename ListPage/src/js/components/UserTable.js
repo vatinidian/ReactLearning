@@ -14,7 +14,7 @@ class UserTable extends React.Component {
         this.props.UserData.forEach(user => {
             let bFiltersMatched = iLength ? false : true;
             for (let i = 0; i < iLength; i++) {
-                if (oFilterData[aKeys[i]] === user[aKeys[i]]) {
+                if (oFilterData[aKeys[i]] && user[aKeys[i]].toUpperCase().indexOf(oFilterData[aKeys[i]].toUpperCase()) !== -1) {
                     bFiltersMatched = true;
                     break;
                 } else {
