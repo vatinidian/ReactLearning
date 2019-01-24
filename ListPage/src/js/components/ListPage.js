@@ -38,7 +38,7 @@ class ListPage extends React.Component {
     }
     render() {
         return (<div>
-            <h1>List Page</h1>
+            <h1>User List</h1>
             <FilterBar userId={this.state.userId} name={this.state.name} onFilterChange={this.handleFilterChange} onSearch={this.handleSearch} />
             <UserTable UserData={UserData} filterData={this.state.filterBarInfo} />
         </div>);

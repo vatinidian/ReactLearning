@@ -1,5 +1,6 @@
 import React from "react";
 import UserTableRow from "./UserTableRow";
+import NoDataRow from "./NoDataRow";
 
 class UserTable extends React.Component {
     constructor(props) {
@@ -27,6 +28,10 @@ class UserTable extends React.Component {
             }
 
         });
+
+        if (!rows.length) {
+            rows.push(<NoDataRow message="No Data Found ! Please adjust your search or We are Mad" />);
+        }
         return (<table className="table">
             <thead>
                 <tr>

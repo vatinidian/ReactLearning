@@ -38,3 +38,8 @@ tr {
     margin: 1px;
     float: right;
 }
+
+.noDataRow td {
+    text-align: center;
+    background-color: cornsilk;
+}
