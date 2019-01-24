@@ -1,5 +1,5 @@
 # ReactLearning
-Learning Repo for ReactJs Library.
+Learning Repository for ReactJs Library. This is kind of Holder for all Learning Projects.
 
 ProjectList:
  1. ListPage - UserList Page which has FilterBar and a Table below. 
