@@ -5,6 +5,9 @@ ProjectList:
  1. ListPage - UserList Page which has FilterBar and a Table below. 
 
 # Project 1 : ListPage
+This is done with concept called StateLifting (https://reactjs.org/docs/lifting-state-up.html)..
+No redux used in this example (Saving it for Later :P).
+
 ![Alt text](/ListPage/ListPage.png?raw=true)
  
 # Steps to execute
