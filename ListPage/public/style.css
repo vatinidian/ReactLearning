@@ -1,0 +1,23 @@
+.App {
+    margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table {
+    width: 100%;
+    border: 1px solid black !important;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid darkblue;
+    background-color: ivory;
+    color: darkblue;
+}
+
+td,
+tr {
+    border: 1px solid #cccccc;
+    padding: 5px;
+    color: darkblue;
+}

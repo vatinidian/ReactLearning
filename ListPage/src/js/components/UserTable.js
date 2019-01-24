@@ -1,15 +1,23 @@
 import React from "react";
+import UserTableRow from "./UserTableRow";
 
-class UserTable extends React.Component{
+class UserTable extends React.Component {
     render() {
-        return(<table>
+        const rows = [];
+        this.props.UserData.forEach(user => {
+            rows.push(<UserTableRow userId={user.userId} name={user.name} contact={user.contact} key={user.userId} />);
+        });
+        return (<table className="table">
             <thead>
-            <tr>
-                <th>UserId</th>
-                <th>Name</th>
-            </tr>
+                <tr>
+                    <th>UserId</th>
+                    <th>Name</th>
+                    <th>Contact</th>
+                </tr>
             </thead>
-            </table>)
+
+            <tbody>{rows}</tbody>
+        </table>)
     }
 }
 
