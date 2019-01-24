@@ -3,7 +3,7 @@ import ListPage from "./js/components/ListPage";
 class App extends Component {
     render() {
         return (
-            <div class="App">
+            <div className="App">
                 <ListPage />
             </div>
         );

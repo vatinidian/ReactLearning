@@ -2,10 +2,30 @@ import React from "react";
 import UserTableRow from "./UserTableRow";
 
 class UserTable extends React.Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
         const rows = [];
+        const oFilterData = this.props.filterData;
+        const aKeys = Object.keys(oFilterData);
+        const iLength = aKeys ? aKeys.length : 0;
+
         this.props.UserData.forEach(user => {
-            rows.push(<UserTableRow userId={user.userId} name={user.name} contact={user.contact} key={user.userId} />);
+            let bFiltersMatched = iLength ? false : true;
+            for (let i = 0; i < iLength; i++) {
+                if (oFilterData[aKeys[i]] === user[aKeys[i]]) {
+                    bFiltersMatched = true;
+                    break;
+                } else {
+                    bFiltersMatched = bFiltersMatched || false;
+                }
+            }
+
+            if (bFiltersMatched) {
+                rows.push(<UserTableRow userId={user.userId} name={user.name} contact={user.contact} key={user.userId} />);
+            }
+
         });
         return (<table className="table">
             <thead>

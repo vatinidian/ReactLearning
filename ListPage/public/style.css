@@ -21,3 +21,20 @@ tr {
     padding: 5px;
     color: darkblue;
 }
+
+.filterBar {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid darkblue;
+    width: 99%;
+    margin-bottom: 1rem;
+}
+
+.filterBarInput {
+    margin-right: 1rem;
+}
+
+.filterBarSearchButton {
+    margin: 1px;
+    float: right;
+}
